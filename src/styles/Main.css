@@ -1,0 +1,264 @@
+/* Main.css - Futuristic Fashion UI */
+
+body, html, #root, .main-bg {
+  min-height: 100vh;
+  margin: 0;
+  background: #18191c;
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Japanese Background Characters */
+body::before {
+  content: '武';
+  position: fixed;
+  right: 10%;
+  top: 20%;
+  font-size: 25rem;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 255, 128, 0.06);
+  font-family: serif;
+  z-index: 1;
+  pointer-events: none;
+  transform: rotate(15deg);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body::after {
+  content: '侍';
+  position: fixed;
+  left: 8%;
+  bottom: 15%;
+  font-size: 30rem;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 255, 128, 0.05);
+  font-family: serif;
+  z-index: 1;
+  pointer-events: none;
+  transform: rotate(-12deg);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191a1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff80;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc66;
+}
+
+.main-bg {
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 48px 0 48px;
+  background: transparent;
+}
+.logo {
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+.nav-links li:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-icon span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 48px 0 48px;
+  min-height: 70vh;
+  gap: 32px;
+}
+.left-section {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+}
+.geometric-title {
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  line-height: 1.1;
+  margin-bottom: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.geometric-title span {
+  display: inline-block;
+  margin-right: 0.1em;
+  letter-spacing: 0.05em;
+}
+.desc-block h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.desc-block p {
+  margin: 0 0 24px 0;
+  color: #b0b0b0;
+  font-size: 1rem;
+  max-width: 340px;
+}
+.start-btn {
+  background: #fff;
+  color: #18191c;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.start-btn:hover {
+  background: #222;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.center-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+.main-character {
+  width: 320px;
+  height: 480px;
+  object-fit: contain;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 #000a;
+  background: #222;
+  margin: 0 auto;
+  display: block;
+}
+.right-section {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 260px;
+}
+.card {
+  background: #23242a;
+  border-radius: 24px;
+  padding: 24px 18px 18px 18px;
+  box-shadow: 0 4px 24px 0 #0007;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-header .arrow {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.card-img {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #111;
+}
+
+@media (max-width: 1100px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 12px 0 12px;
+    gap: 24px;
+  }
+  .left-section, .center-section, .right-section {
+    min-width: unset;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-character {
+    margin: 32px 0;
+    width: 90vw;
+    max-width: 340px;
+    height: auto;
+  }
+  .right-section {
+    align-items: center;
+    margin-top: 32px;
+  }
+}
