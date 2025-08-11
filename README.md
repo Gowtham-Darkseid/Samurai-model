@@ -74,7 +74,7 @@ Samurai-model/
 ---
 
 ## 📜 Screenshot
-```
+
 <img width="1920" height="4012" alt="screencapture-samurai-ng-netlify-app-2025-08-11-07_44_33" src="https://github.com/user-attachments/assets/020b5c2e-5f66-40c9-a443-11a0197a4a7f" />
 
 ---
