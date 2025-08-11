@@ -1,0 +1,204 @@
+/* Mobile.css - Mobile-first responsive optimizations */
+
+/* Base mobile optimizations */
+@media (max-width: 767px) {
+  /* Prevent horizontal scrolling */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Hero section specific optimizations */
+  .print-hero-bg {
+    padding: 0 10px;
+  }
+  
+  .print-hero-img {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .print-hero-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Optimize touch interactions */
+  button, .start-btn, .floating-nav-item {
+    -webkit-tap-highlight-color: rgba(0, 255, 128, 0.3);
+    touch-action: manipulation;
+  }
+  
+  /* Improve text readability on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Ensure proper spacing and typography */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+  
+  p {
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hide decorative elements that might interfere on mobile */
+  .print-hero-corner-tl,
+  .print-hero-corner-tr,
+  .print-hero-corner-bl,
+  .print-hero-corner-br {
+    opacity: 0.7;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  /* Further reduce background opacity */
+  body::before,
+  body::after {
+    opacity: 0.3 !important;
+  }
+  
+  /* Hero section specific for small screens */
+  .print-hero-bg {
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+  }
+  
+  .print-hero-center {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .print-hero-img {
+    filter: grayscale(1) brightness(0.8) contrast(1.1);
+  }
+  
+  /* Ensure minimum touch target sizes */
+  button, 
+  .start-btn,
+  .floating-nav-item,
+  .nav-links li {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve button spacing */
+  .start-btn {
+    margin: 10px 0;
+  }
+  
+  /* Optimize card layouts */
+  .card {
+    margin: 10px 0;
+    border-radius: 16px;
+  }
+  
+  /* Hide very decorative elements on very small screens */
+  .print-hero-corner-tl,
+  .print-hero-corner-tr,
+  .print-hero-corner-bl,
+  .print-hero-corner-br {
+    display: none;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+  /* Further typography optimizations */
+  .geometric-title {
+    font-size: 1.5rem !important;
+    letter-spacing: 0.03em !important;
+  }
+  
+  .legacy-title,
+  .arts-title,
+  .mystical-title {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.05em !important;
+  }
+  
+  /* Reduce padding for very small screens */
+  .navbar {
+    padding: 12px 12px 0 12px !important;
+  }
+  
+  .main-content {
+    margin: 12px 8px 0 8px !important;
+  }
+  
+  .legacy-content,
+  .presence-content {
+    padding: 0 8px !important;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .print-hero-bg {
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+  
+  .geometric-title {
+    font-size: 2rem;
+  }
+  
+  .legacy-title,
+  .arts-title,
+  .mystical-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* High DPI/Retina display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp text rendering on high-DPI displays */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Dark mode considerations for mobile */
+@media (prefers-color-scheme: dark) {
+  /* The app is already dark, but ensure proper contrast */
+  .card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for accessibility */
+@media (max-width: 767px) {
+  button:focus,
+  .start-btn:focus,
+  .floating-nav-item:focus {
+    outline: 2px solid #00ff80;
+    outline-offset: 2px;
+  }
+}

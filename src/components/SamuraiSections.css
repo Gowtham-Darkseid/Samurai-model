@@ -484,6 +484,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding: 0 30px;
   }
   
   .techniques-grid {
@@ -495,16 +496,111 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
+  
+  .legacy-title {
+    font-size: 3rem;
+  }
+  
+  .samurai-silhouette {
+    width: 320px;
+    height: 480px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .legacy-content, .presence-content {
+    padding: 0 20px;
+    gap: 30px;
+  }
+  
   .legacy-title, .arts-title, .mystical-title {
     font-size: 2.5rem;
+    letter-spacing: 0.15em;
+  }
+  
+  .legacy-description {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+  
+  .legacy-stats {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .samurai-silhouette {
+    width: 280px;
+    height: 420px;
   }
   
   .footer-content {
     grid-template-columns: 1fr;
     gap: 30px;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .legacy-content, .presence-content {
+    padding: 0 16px;
+    gap: 25px;
+  }
+  
+  .legacy-title, .arts-title, .mystical-title {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .legacy-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .samurai-silhouette {
+    width: 240px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 400px) {
+  .legacy-content, .presence-content {
+    padding: 0 12px;
+  }
+  
+  .legacy-title, .arts-title, .mystical-title {
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+  }
+  
+  .legacy-description {
+    font-size: 0.9rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .samurai-silhouette {
+    width: 200px;
+    height: 300px;
   }
 }

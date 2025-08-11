@@ -1,6 +1,6 @@
 import React from 'react';
 import './SamuraiSections.css';
-import samuraiImg from '../assets/samurai.png';
+import statueImg from '../assets/statue.png';
 
 const SamuraiSections = () => {
   return (
@@ -33,7 +33,7 @@ const SamuraiSections = () => {
           </div>
           <div className="legacy-visual">
             <div className="samurai-silhouette">
-              <img src={samuraiImg} alt="Samurai Silhouette" />
+              <img src={statueImg} alt="Samurai Statue" />
               <div className="energy-aura"></div>
             </div>
           </div>
