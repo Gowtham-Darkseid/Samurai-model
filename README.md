@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Samurai Model – Darkseid
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A cinematic, samurai-themed React website that merges ancient warrior traditions with modern, sleek web design.  
+The project uses bold typography, subtle animations, and a dark neon palette to create an immersive storytelling experience.
 
-## Available Scripts
+## 🖥 Live Demo
+[Visit Live Site](https://samurai-ng.netlify.app) 
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📜 About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Samurai Model – Darkseid** is a tribute to the timeless code of the samurai. It’s designed as a single-page immersive experience, guiding the visitor through the philosophy, techniques, and legacy of the warrior.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Key Sections:**
+1. **Hero Banner** – Striking samurai imagery with a bold title.
+2. **The Way of the Blade** – A brief history and principles of samurai honor.
+3. **Shadow Techniques** – Cards explaining Kenjutsu, Ninjutsu, and Bushido.
+4. **Spirit of the Warrior** – A motivational call-to-action.
+5. **Footer** – Quick access to values, techniques, and legacy.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚡ Features
 
-### `npm run build`
+- 🎨 **Modern UI** – Dark mode design with glowing green highlights.
+- ⚔ **Samurai Theme** – Inspired by Japanese warrior culture.
+- 📱 **Responsive Design** – Works on desktop, tablet, and mobile.
+- ✨ **Smooth Animations** – Transitions that enhance storytelling.
+- 🔗 **Single Page Navigation** – Fast and fluid page transitions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React.js
+- **Styling:** CSS / Tailwind CSS (or your styling framework)
+- **Deployment:** Netlify (or your preferred hosting)
+- **Assets:** Samurai images & custom typography
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+- Node.js & npm installed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
+```bash
+# Clone the repo
+git clone https://github.com/Gowtham-Darkseid/Samurai-model.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Go to project folder
+cd Samurai-model
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run locally
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📂 Project Structure
+```
+Samurai-model/
+├── public/        # Static assets
+├── src/           # React components & styles
+├── package.json
+├── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📜 Screenshot
+```
+<img width="1920" height="4012" alt="screencapture-samurai-ng-netlify-app-2025-08-11-07_44_33" src="https://github.com/user-attachments/assets/020b5c2e-5f66-40c9-a443-11a0197a4a7f" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+## 📜 License
+This project is licensed under the MIT License.
